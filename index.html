@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Skycast</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌤️%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<main>
+ <div class="bar">
+  <div class="search">
+   <label class="sr" for="q">Search for a city</label>
+   <input id="q" type="search" placeholder="Search for a city" autocomplete="off">
+   <ul id="results" role="listbox"></ul>
+  </div>
+  <button id="loc" aria-label="Use my location" title="Use my location">📍</button>
+  <button id="unit" aria-label="Switch units">°C</button>
+ </div>
+ <div id="app"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
